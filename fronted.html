@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrazione | Music Streaming</title>
+</head>
+<body>
+    <header>
+        <h1>Registrati</h1>
+        <p>Crea il tuo account e ascolta la tua musica preferita.</p>
+    </header>
+
+    <main>
+        <form onsubmit="alert('Registrazione inviata!'); return false;">
+            <p>
+                <label for="nome">Nome</label><br>
+                <input type="text" id="nome" name="nome" required>
+            </p>
+
+            <p>
+                <label for="cognome">Cognome</label><br>
+                <input type="text" id="cognome" name="cognome" required>
+            </p>
+
+            <p>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="password">Password</label><br>
+                <input type="password" id="password" name="password" required>
+            </p>
+
+            <p>
+                <label for="nascita">Data di nascita</label><br>
+                <input type="date" id="nascita" name="nascita" required>
+            </p>
+
+            <p>
+                <label for="telefono">Numero di telefono</label><br>
+                <input type="number" id="telefono" name="telefono">
+            </p>
+
+            <fieldset>
+                <legend>I tuoi gusti musicali</legend>
+                <input type="checkbox" id="pop" name="gusti" value="pop">
+                <label for="pop">Pop</label><br>
+                <input type="checkbox" id="rock" name="gusti" value="rock">
+                <label for="rock">Rock</label><br>
+                <input type="checkbox" id="hiphop" name="gusti" value="hiphop">
+                <label for="hiphop">Hip Hop</label><br>
+                <input type="checkbox" id="jazz" name="gusti" value="jazz">
+                <label for="jazz">Jazz</label><br>
+                <input type="checkbox" id="afrobeats" name="gusti" value="afrobeats">
+                <label for="afrobeats">Afrobeats</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Termini e condizioni</legend>
+                <input type="radio" id="accetto" name="termini" value="accetto" required>
+                <label for="accetto">Accetto i termini e condizioni</label><br>
+                <input type="radio" id="rifiuto" name="termini" value="rifiuto">
+                <label for="rifiuto">Non accetto</label>
+            </fieldset>
+
+            <p>
+                <button type="submit">Invia registrazione</button>
+            </p>
+        </form>
+    </main>
+</body>
+</html>
